@@ -1,0 +1,87 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/editContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact no"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <TextView
+            android:id="@+id/invalidTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/buttonCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Confirm Order"
+            android:onClick="Confirm"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

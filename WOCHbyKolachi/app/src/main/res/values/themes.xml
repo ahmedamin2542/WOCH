@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WOCHbyKolachi" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@drawable/gradient_primary</item> <!-- Dark grey color -->
+        <item name="colorPrimaryVariant">#616161</item> <!-- Medium grey color -->
+        <item name="colorOnPrimary">#000000</item> <!-- Black color for text and icons on primary color -->
+        <item name="android:buttonStyle">@style/Button.Default</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FFFFFF</item> <!-- White color -->
+        <item name="colorSecondaryVariant">#E0E0E0</item> <!-- Light grey color -->
+        <item name="colorOnSecondary">#000000</item> <!-- Black color for text and icons on secondary color -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">#FFFFFF</item> <!-- White background color -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="Button.Default" parent="Widget.AppCompat.Button">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorSecondaryVariant</item>
+    </style>
+</resources>
